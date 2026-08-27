@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="card">
+
+    <div class="top-text">
+        Page 06 • Make A Wish
+    </div>
+
+
+    <div class="wish-stars">
+        ✨ ⭐ 🌠 ⭐ ✨
+    </div>
+
+
+    <h1>
+        Make A Wish
+    </h1>
+
+
+    <p class="subtitle">
+
+        Think of your biggest wish,
+        tap the heart and send it to
+        the stars. 💫
+
+    </p>
+
+
+    <div class="wish-heart"
+         id="wishHeart"
+         onclick="makeWish()">
+
+        ♡
+
+    </div>
+
+
+    <button class="btn"
+            onclick="makeWish()">
+
+        💫 Make My Wish
+
+    </button>
+
+
+    <p id="wishMessage"
+       class="wish-message">
+    </p>
+
+
+    <a class="btn secondary"
+       href="{{ url_for('final') }}">
+
+        Final Surprise →
+
+    </a>
+
+</section>
+
+{% endblock %}
