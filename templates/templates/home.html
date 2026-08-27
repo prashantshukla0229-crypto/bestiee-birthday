@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="card cinematic">
+
+    <div id="intro">
+
+        <div class="small-glow">
+            A LITTLE SURPRISE FOR MY
+        </div>
+
+        <h1 class="hero-title">
+            Bestie 💖
+        </h1>
+
+        <p class="hero-sub">
+            Something beautiful is waiting for you...
+        </p>
+
+        <div class="count">
+            3
+        </div>
+
+    </div>
+
+
+    <div id="homeContent" class="hidden">
+
+        <div class="photo-wrap pulse">
+
+            <img
+                src="{{ url_for('static',
+                filename='photos/sweta.jpg') }}"
+                onerror="this.src='https://placehold.co/500x500/211329/ffffff?text=Bestie+%F0%9F%92%96'"
+                alt="Bestie">
+
+        </div>
+
+
+        <div class="typing" id="typing"></div>
+
+
+        <p class="subtitle">
+
+            I made this little birthday universe
+            specially for my Bestie.
+
+        </p>
+
+
+        <div class="emoji">
+            🌸 ✨ 🎀 ✨ 🌸
+        </div>
+
+
+        <a class="btn"
+           href="{{ url_for('bond') }}">
+
+            Enter Your Birthday Universe →
+
+        </a>
+
+
+        <p class="date">
+            September 1 • Your Special Day 🎂
+        </p>
+
+    </div>
+
+</section>
+
+{% endblock %}
