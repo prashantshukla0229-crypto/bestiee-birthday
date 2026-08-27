@@ -1,0 +1,38 @@
+<!DOCTYPE html>  <html lang="en">  <head>  
+    <meta charset="UTF-8">  <meta name="viewport"  
+      content="width=device-width, initial-scale=1.0">  
+
+<title>Bestie's Birthday 💖</title>  
+
+<link rel="stylesheet"  
+      href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>  <body data-page="{{ page }}">  <div id="stars"></div>  
+
+<main class="page">  
+
+    {% block content %}  
+    {% endblock %}  
+
+</main>  
+
+<div class="music-control">  
+    <button id="musicBtn" onclick="toggleMusic()">🎵</button>  
+</div>  
+
+<div class="dots">  
+
+    {% for p in ['home', 'bond', 'birthday', 'surprise',  
+                 'celebrate', 'wish', 'final'] %}  
+
+    <span class="dot  
+    {{ 'active' if p == page else '' }}"></span>  
+
+    {% endfor %}  
+
+</div>  
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>  
+</html>
