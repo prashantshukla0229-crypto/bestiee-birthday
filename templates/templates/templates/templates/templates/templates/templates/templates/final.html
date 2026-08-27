@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="card final">
+
+    <div class="top-text">
+        Final Page • September 1
+    </div>
+
+
+    <div class="firework-title">
+        🎆
+    </div>
+
+
+    <div class="photo-wrap final-photo">
+
+        <img
+            src="{{ url_for('static',
+            filename='photos/sweta.jpg') }}"
+            onerror="this.src='https://placehold.co/500x500/211329/ffffff?text=Bestie+%F0%9F%92%96'"
+            alt="Bestie">
+
+    </div>
+
+
+    <h1>
+
+        Stay Amazing,
+        <br>
+        Bestie! 🌷
+
+    </h1>
+
+
+    <p class="subtitle">
+
+        May your year be brighter
+        than every star in this
+        little universe.
+
+    </p>
+
+
+    <div id="countdown"
+         class="countdown">
+
+        Loading...
+
+    </div>
+
+
+    <p class="quote">
+
+        “May this year give you
+        a thousand reasons to smile.”
+
+    </p>
+
+
+    <button class="btn"
+            onclick="finalFireworks()">
+
+        🎆 One Last Surprise
+
+    </button>
+
+
+    <a class="btn secondary"
+       href="{{ url_for('home') }}">
+
+        ↻ Replay From Beginning
+
+    </a>
+
+</section>
+
+{% endblock %}
