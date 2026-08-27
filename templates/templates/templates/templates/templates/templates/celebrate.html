@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="card celebration">
+
+    <div class="top-text">
+        Page 05 • Celebration Mode
+    </div>
+
+
+    <h1>
+        Bestie,
+        <br>
+        Let's Celebrate! 🎉
+    </h1>
+
+
+    <p class="subtitle">
+
+        Tap the button and watch
+        the birthday lights come alive.
+
+    </p>
+
+
+    <div class="bulbs"
+         id="bulbs">
+
+        {% for i in range(24) %}
+
+        <span></span>
+
+        {% endfor %}
+
+    </div>
+
+
+    <div class="big-gift"
+         id="gift">
+
+        🎁
+
+    </div>
+
+
+    <button class="btn"
+            onclick="turnOnLights()">
+
+        ✨ Turn On The Lights
+
+    </button>
+
+
+    <a class="btn secondary"
+       href="{{ url_for('wish') }}">
+
+        Make a Wish →
+
+    </a>
+
+</section>
+
+{% endblock %}
