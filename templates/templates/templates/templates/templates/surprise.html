@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="card">
+
+    <div class="top-text">
+        Page 04 • Just For You
+    </div>
+
+
+    <div class="envelope"
+         onclick="openLetter()">
+
+        💌
+
+    </div>
+
+
+    <h1>
+        A Letter For My Bestie
+    </h1>
+
+
+    <div id="letter"
+         class="letter">
+
+        <p>
+            Dear Bestie,
+        </p>
+
+        <p>
+
+            On your special day,
+            I just want to say:
+
+            keep smiling,
+            keep dreaming and never stop
+            being the amazing person you are.
+
+        </p>
+
+
+        <p>
+
+            May this new year of your life
+            be full of laughter,
+            happiness, success and
+            unforgettable memories. 💖
+
+        </p>
+
+
+        <p>
+
+            Happy Birthday once again,
+            Bestie! 🌷
+
+        </p>
+
+    </div>
+
+
+    <button class="btn"
+            onclick="openLetter()">
+
+        Open The Letter 💌
+
+    </button>
+
+
+    <a class="btn secondary"
+       href="{{ url_for('celebrate') }}">
+
+        Let's Celebrate →
+
+    </a>
+
+</section>
+
+{% endblock %}
