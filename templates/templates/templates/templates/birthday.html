@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="card">
+
+    <div class="top-text">
+        Page 03 • The Special Day
+    </div>
+
+
+    <div class="cake-scene">
+
+        <div class="flame" id="flame">
+            🔥
+        </div>
+
+
+        <div class="cake">
+
+            <div class="icing"></div>
+
+            <div class="cake-body"></div>
+
+            <div class="plate"></div>
+
+        </div>
+
+    </div>
+
+
+    <h1>
+        Happy Birthday,
+        <br>
+        Bestie! 🧸
+    </h1>
+
+
+    <p class="subtitle">
+
+        September 1 is your day.
+
+        Close your eyes,
+        make a wish and blow the candles! ✨
+
+    </p>
+
+
+    <button class="btn"
+            onclick="blowCandles()">
+
+        🕯️ Blow The Candles
+
+    </button>
+
+
+    <a class="btn secondary"
+       href="{{ url_for('surprise') }}">
+
+        Next →
+
+    </a>
+
+</section>
+
+{% endblock %}
